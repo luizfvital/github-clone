@@ -27,7 +27,16 @@ const RepoCard: React.FC<Props> = ({
   stars,
   forks,
 }) => {
-  const languageClass = language ? language.toLowerCase() : 'other'
+  let languageClass
+
+  if (
+    language?.toLocaleLowerCase() === 'javascript' ||
+    language?.toLocaleLowerCase() === 'typescript'
+  ) {
+    languageClass = language.toLocaleLowerCase()
+  } else {
+    languageClass = 'other'
+  }
 
   return (
     <Container>
