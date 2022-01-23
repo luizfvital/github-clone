@@ -1,4 +1,5 @@
-GitHub front-end clone with a few functionalities using ReactJS and Typescript. 
+<img src="images/github-clone.png" />
 
+GitHub front-end clone using ReactJS and Typescript.
 
-
+Technologies used:
